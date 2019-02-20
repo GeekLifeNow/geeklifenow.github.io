@@ -72,10 +72,10 @@ author:
 social-network-links:
   rss: true
   email: "someone@example.com"
-  facebook: daattali
-  github: https://github.com/GeekLifeNow
-  twitter: https://twitter.com/GeekLifeNow
-  linkedin: daattali  
+ # facebook: daattali
+  github: GeekLifeNow
+  twitter: GeekLifeNow
+  linkedin: matthew-snyder-b51b0a43
 #  reddit: yourname
 #  google-plus: +DeanAttali
 #  xing: yourname
