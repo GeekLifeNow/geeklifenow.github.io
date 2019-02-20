@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Matthew Snyder @GeekLifeNow
+title: @GeekLifeNow
 
 # Short description of your site
 description: A small sector of the Interwbez that I can share projects, tech tips, and cool gadgets!
@@ -73,11 +73,11 @@ social-network-links:
   rss: true
   email: "someone@example.com"
   facebook: daattali
-  github: daattali
-  twitter: daattali
+  github: https://github.com/GeekLifeNow
+  twitter: https://twitter.com/GeekLifeNow
+  linkedin: daattali  
 #  reddit: yourname
 #  google-plus: +DeanAttali
-#  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
