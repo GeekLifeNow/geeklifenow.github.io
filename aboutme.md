@@ -1,16 +1,23 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Matthew Snyder
+subtitle: '... A SysAdmin with my head in the Cloud...'
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+_This is a story of a SysAdmin that is making a transition to the cloud:_
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I started my professional career in IT in the summer of 2008 working as a general PC technician for a Christian school. I was a 5th grade elementary teach during the school year, but the finances did not allow me to take the summers off. So my first two summers I worked with the maintenance crew and then I got wise and requested to work with the Technology Department, which really just consisted on one person! 
 
-What else do you need?
+From there I learned the ins and outs of PC repair, Windows Server domains, Imaging (Acronis True Image), desktop setups, and much more. I was extremely fortunate and blessed to work under a mentor that freely shared his wide breadth of knowledge with me and truly wanted to see me succeed. I am very thankful for these people that have come into my life in their seasons and I am actually in a role to start giving back to those working with me.
 
-### my history
+Lately, I've been focused on automation in my current environment and since it is 99% Windows, that means PowerShell!
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+_"Do you do anything besides work?"_
+
+Oh yea! Once I put work away, I like to spend time with my family and create videos and assist my wife with her projects like dramas, dinner theatres, and our budding [YouTube channel!](https://www.youtube.com/channel/UCm4noLQPc1IgZlZMNf2uEYg)
+
+### Most current CV:
+
+<div style="text-align: center; margin-top: 90px;">
+  <iframe src="https://geeklifenow.github.io/files/Matthew Snyder - IT Resume.pdf" scrolling="no" width="850px" height="2200px" frameBorder="0"></iframe>
+</div>)
