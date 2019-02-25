@@ -14,10 +14,10 @@ Lately, I've been focused on automation in my current environment and since it i
 
 _"Do you do anything besides work?"_
 
-Oh yea! Once I put work away, I like to spend time with my family and create videos and assist my wife with her projects like dramas, dinner theatres, and our budding [YouTube channel!](https://www.youtube.com/channel/UCm4noLQPc1IgZlZMNf2uEYg)
+Oh yea! Once I put work away, I like to spend time with my family and create videos and assist my wife with her projects like dramas, dinner theatres, and our budding [YouTube channel!](https://www.youtube.com/channel/UCm4noLQPc1IgZlZMNf2uEYg){:target="_blank"}
 
 ### Most current CV:
 
 <div style="text-align: center; margin-top: 90px;">
-  <iframe src="https://geeklifenow.github.io/files/Matthew Snyder - IT Resume.pdf" scrolling="no" width="850px" height="2200px" frameBorder="0"></iframe>
+  <iframe src="https://geeklifenow.github.io/files/MatthewSnyder-ITResume.pdf" scrolling="no" width="850px" height="2200px" frameBorder="0"></iframe>
 </div>)
