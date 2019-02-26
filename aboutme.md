@@ -19,4 +19,4 @@ Oh yea! Once I put work away, I like to spend time with my family and create vid
 ### Most current CV:
 <div style="text-align: center; margin-top: 90px;">
   <iframe src="https://geeklifenow.github.io/files/MatthewSnyder-ITResume.pdf" scrolling="no" width="850px" height="2200px" frameBorder="0"></iframe>
-</div>)
+</div>
