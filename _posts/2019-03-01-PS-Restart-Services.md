@@ -21,4 +21,4 @@ Great question! Head over to my rather humble [GitHub PowerShell Repository](htt
 Restart **all** the services!
 
 {:.center}
-![Restart 'em all!](/img/restart-all-the-services.jpg)
+![Restart 'em all!](/img/restart-all-the-services.jpg){: .center-image}
