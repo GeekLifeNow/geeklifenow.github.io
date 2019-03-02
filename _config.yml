@@ -45,7 +45,7 @@ navbar-col: "#2E303E"
 navbar-text-col: "#EDEDED"
 navbar-children-col: "#2E303E"
 page-col: "#EDEDED"
-link-col: "#008AFF"
+link-col: "#9199BE"
 hover-col: "#6C6B74"
 footer-col: "#212624"
 footer-text-col: "#EDEDED"
@@ -63,7 +63,7 @@ footer-link-col: "#6C6B74"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
+  name: "Webmaster"
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
@@ -98,7 +98,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "geeklifenow.com"
 
 # --- Web Statistics Section --- #
 
