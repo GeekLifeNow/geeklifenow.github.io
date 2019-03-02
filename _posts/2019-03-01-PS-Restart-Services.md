@@ -16,8 +16,9 @@ Restart-Service -InputObject $Service -Verbose
 
 _How do I know the service is back up?_
 
-Great question! Head over to my rather humble [GitHub PowerShell Repository](https://github.com/GeekLifeNow/PowerShell-Automation) to get it for yourself and see how to check service status!
+Great question! Head over to my rather humble [GitHub PowerShell Repository](https://github.com/GeekLifeNow/PowerShell-Automation){:target="_blank"} to get it for yourself and see how to check service status!
 
 Restart **all** the services!
 
+{:.center}
 ![Restart 'em all!](/img/restart-all-the-services.jpg)
