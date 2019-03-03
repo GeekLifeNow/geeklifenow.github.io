@@ -16,7 +16,8 @@ _"Do you do anything besides work?"_
 
 Oh yea! Once I put work away, I like to spend time with my family and create videos and assist my wife with her projects like dramas, dinner theatres, and our budding [YouTube channel!](https://www.youtube.com/channel/UCm4noLQPc1IgZlZMNf2uEYg){:target="_blank"}
 
-### Most current CV: [Download](https://geeklifenow.com/files/MatthewSnyder-ITResume.pdf){:target="_blank"}
+### Most current CV:
+[_Download here_](https://geeklifenow.com/files/MatthewSnyder-ITResume.pdf){:target="_blank"}
 <div style="text-align: center; margin-top: 90px;">
   <iframe src="https://geeklifenow.com/files/MatthewSnyder-ITResume.pdf" scrolling="no" width="850px" height="2200px" frameBorder="0"></iframe>
 </div>
