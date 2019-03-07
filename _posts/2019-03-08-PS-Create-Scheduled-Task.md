@@ -4,16 +4,13 @@ title: Create Scheduled Tasks
 subtitle: Create a scheduled task to run PowerShell script via GUI or with PowerShell.
 tags: [PowerShell, automation, task scheduler]
 ---
-
 In my environment we have a good number of scheduled tasks that run on various Windows servers. Don’t ask me what they do, that’s for the dev team to know and for me to setup! I try my best to push using PowerShell and it is starting to gain adoption, which is great. That being said, how exactly would one go about running a PowerShell script (.ps1) from a scheduled task?
 
 I’ll show you two ways, one from the plain GUI (yes, I know…gross) and then the cool-kids way, using PowerShell…to create a scheduled task that runs PowerShell.
-
 <p align="center">
   <img src="img/posts/sched_task_tut_0.jpg">
 </p>
-
-##Setup a scheduled task to run a PowerShell script:
+##Setup a scheduled task to run a PowerShell script:##
 
 1. First, open the Task Scheduler. I am using the Windows 10 GUI for the sake of this demonstration.   There’s not much difference in the interface from the more recent versions of Windows Server. Click **Action > Create Task…**:
    
@@ -27,7 +24,7 @@ I’ll show you two ways, one from the plain GUI (yes, I know…gross) and then 
     
     ![Task trigger settings](img/posts/sched_task_tut_3.jpg)
 
-4. Go to the **Actionrs** tab and select **New…**. In order for the task to run a PowerShell script, you’ll need to set the Action: to **Start a program**. Then in the Program/script: field, enter **_powershell.exe_**, as this will start the PowerShell session.
+4. Go to the **Actions** tab and select **New…**. In order for the task to run a PowerShell script, you’ll need to set the Action: to **Start a program**. Then in the Program/script: field, enter **_powershell.exe_**, as this will start the PowerShell session.
    
 The Add arguments (optional): field is where you will define which PowerShell file to run, in this case I am running **_-File C:\Scripts\YourScript.ps1_**. Be sure to input the _-File_ parameter before you enter the location of the script, as this is what tells PowerShell to run a script from a file. Click **OK** to confirm this section.
    
@@ -39,7 +36,7 @@ Now you have a task that will run C:\Scripts\YourScript.ps1 on your given schedu
 
 _*One thing you will need to have in place is to allow your machine to run PowerShell scripts. By default, Windows will not run PowerShell scripts which is intentional on behalf of security. You will need to set the desired Set-ExecutionPolicy to fit your environment. More on that [here]( https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6)_
 
-##Setup a scheduled task to run a PowerShell script…via PowerShell!
+##Setup a scheduled task to run a PowerShell script…via PowerShell!##
 
 Here is a portion of a PowerShell script that will set up this same task:
 
