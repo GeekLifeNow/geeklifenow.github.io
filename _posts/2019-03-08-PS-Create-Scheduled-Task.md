@@ -68,4 +68,4 @@ $STModify | Set-ScheduledTask -User $STUserName -Password $STPassword
 ~~~
 This has been very helpful lately, as we continue to deploy core versions of Windows Server 2016/2019 in the environment. Yes, you can get to a GUI of the Task Scheduler, but only remotely using an mmc snap-in. I’m sure this script will come in handy as we continue to automate in the environment!
 
-Check out my [PowerShell GitHub repo](https://github.com/GeekLifeNow/PowerShell-Automation) for this and other scripts that may help you!
+Check out my [PowerShell GitHub repo](https://github.com/GeekLifeNow/PowerShell-Automation){:target="_blank"} for this and other scripts that may help you!
