@@ -20,7 +20,7 @@ I’ll show you two ways, one from the plain GUI (yes, I know…gross) and then 
     
     ![Name task and other settings](/img/posts/sched_task_tut_2.png)
 
-3. Go to the #Triggers# tab and select **New…** and then select your options for when you want the task to run. I want my task to trigger daily starting on May the 4th (be with you) @ 12:00 AM and run every 20 minutes for 24 hours. This essentially will run indefinitely. Set any other options and then click **OK**.
+3. Go to the **Triggers** tab and select **New…** and then select your options for when you want the task to run. I want my task to trigger daily starting on May the 4th (be with you) @ 12:00 AM and run every 20 minutes for 24 hours. This essentially will run indefinitely. Set any other options and then click **OK**.
     
     ![Task trigger settings](/img/posts/sched_task_tut_3.jpg)
 
