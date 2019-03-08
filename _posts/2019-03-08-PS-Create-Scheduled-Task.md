@@ -8,27 +8,27 @@ In my environment we have a good number of scheduled tasks that run on various W
 
 I’ll show you two ways, one from the plain GUI (yes, I know…gross) and then the cool-kids way, using PowerShell…to create a scheduled task that runs PowerShell.
 <p align="center">
-  <img src="img/posts/sched_task_tut_0.jpg">
+  <img src="/img/posts/sched_task_tut_0.jpg">
 </p>
 ##Setup a scheduled task to run a PowerShell script:##
 
 1. First, open the Task Scheduler. I am using the Windows 10 GUI for the sake of this demonstration.   There’s not much difference in the interface from the more recent versions of Windows Server. Click **Action > Create Task…**:
    
-     ![Create Task](img/posts/sched_task_tut_1.jpg)
+     ![Create Task](/img/posts/sched_task_tut_1.jpg)
 
 2. Give your task a name and a description and any other specific options that fit your environment:
     
-    ![Name task and other settings](img/posts/sched_task_tut_2.png)
+    ![Name task and other settings](/img/posts/sched_task_tut_2.png)
 
 3. Go to the #Triggers# tab and select **New…** and then select your options for when you want the task to run. I want my task to trigger daily starting on May the 4th (be with you) @ 12:00 AM and run every 20 minutes for 24 hours. This essentially will run indefinitely. Set any other options and then click **OK**.
     
-    ![Task trigger settings](img/posts/sched_task_tut_3.jpg)
+    ![Task trigger settings](/img/posts/sched_task_tut_3.jpg)
 
 4. Go to the **Actions** tab and select **New…**. In order for the task to run a PowerShell script, you’ll need to set the Action: to **Start a program**. Then in the Program/script: field, enter **_powershell.exe_**, as this will start the PowerShell session.
    
 The Add arguments (optional): field is where you will define which PowerShell file to run, in this case I am running **_-File C:\Scripts\YourScript.ps1_**. Be sure to input the _-File_ parameter before you enter the location of the script, as this is what tells PowerShell to run a script from a file. Click **OK** to confirm this section.
    
-   ![Task Action settings](img/posts/sched_task_tut_4.jpg)
+   ![Task Action settings](/img/posts/sched_task_tut_4.jpg)
 
 5. At this point, you have enough setup that this can be finished by clicking *OK*. Feel free to set any other settings to your liking in the *Conditions* or *Settings* tabs.
 
