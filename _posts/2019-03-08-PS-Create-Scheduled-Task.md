@@ -10,7 +10,7 @@ I’ll show you two ways, one from the plain GUI (yes, I know…gross) and then 
 <p align="center">
   <img src="/img/posts/sched_task_tut_0.jpg">
 </p>
-##Setup a scheduled task to run a PowerShell script:##
+## Setup a scheduled task to run a PowerShell script:##
 
 1. First, open the Task Scheduler. I am using the Windows 10 GUI for the sake of this demonstration.   There’s not much difference in the interface from the more recent versions of Windows Server. Click **Action > Create Task…**:
    
@@ -36,7 +36,7 @@ Now you have a task that will run C:\Scripts\YourScript.ps1 on your given schedu
 
 _*One thing you will need to have in place is to allow your machine to run PowerShell scripts. By default, Windows will not run PowerShell scripts which is intentional on behalf of security. You will need to set the desired Set-ExecutionPolicy to fit your environment. More on that [here]( https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6)_
 
-##Setup a scheduled task to run a PowerShell script…via PowerShell!##
+## Setup a scheduled task to run a PowerShell script…via PowerShell!##
 
 Here is a portion of a PowerShell script that will set up this same task:
 
