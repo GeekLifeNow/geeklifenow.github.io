@@ -25,8 +25,10 @@ I’ll show you two ways, one from the plain GUI (yes, I know…gross) and then 
     ![Task trigger settings](/img/posts/sched_task_tut_3.jpg)
 
 4. Go to the **Actions** tab and select **New…**. In order for the task to run a PowerShell script, you’ll need to set the Action: to **Start a program**. Then in the Program/script: field, enter **_powershell.exe_**, as this will start the PowerShell session.
-   
-The Add arguments (optional): field is where you will define which PowerShell file to run, in this case I am running **_-File C:\Scripts\YourScript.ps1_**. Be sure to input the _-File_ parameter before you enter the location of the script, as this is what tells PowerShell to run a script from a file. Click **OK** to confirm this section.
+
+    The Add arguments (optional): field is where you will define which PowerShell file to run, in this case I am running **_-File    
+    C:\Scripts\YourScript.ps1_**. Be sure to input the _-File_ parameter before you enter the location of the script, as this is what 
+    tells PowerShell to run a script from a file. Click **OK** to confirm this section.
    
    ![Task Action settings](/img/posts/sched_task_tut_4.jpg)
 
