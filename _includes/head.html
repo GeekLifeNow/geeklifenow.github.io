@@ -109,8 +109,8 @@
 
   {% if page.share-img %}
   <meta property="og:image" content="{{ page.share-img }}" />
-  {% elsif site.avatar %}
-  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
+  {% elsif site.image %}
+  <meta property="og:image" content="{{ site.url }}{{ site.image }}" />
   {% endif %}
 
 
@@ -137,8 +137,8 @@
 
   {% if page.share-img %}
   <meta name="twitter:image" content="{{ page.share-img }}" />
-  {% elsif site.avatar %}
-  <meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}" />
+  {% elsif site.image %}
+  <meta name="twitter:image" content="{{ site.url }}{{ site.image }}" />
   {% endif %}
 
   {% if site.matomo %}
