@@ -2,6 +2,7 @@
 layout: post
 title: Restart (Remote) Services with PowerShell
 subtitle: Easy script to remotely restart service(s).
+share-img: /img/restart-all-the-services.jpg
 tags: [PowerShell, automation, remote, services]
 ---
 
