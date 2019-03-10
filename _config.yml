@@ -33,6 +33,9 @@ navbar-links:
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/img/avatar-icon.png"
 
+#Site image to display if nor share-img is defined on individual posts
+image: "/img/gln_logo.png
+
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
 # title-img: /path/to/image
