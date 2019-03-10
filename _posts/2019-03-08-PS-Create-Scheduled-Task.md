@@ -2,6 +2,7 @@
 layout: post
 title: Create Scheduled Tasks
 subtitle: Create a scheduled task to run PowerShell script via GUI or with PowerShell.
+share-img: /img/posts/sched_task_tut_0.jpg
 tags: [PowerShell, automation, task scheduler]
 ---
 In my environment we have a good number of scheduled tasks that run on various Windows servers. Don’t ask me what they do, that’s for the dev team to know and for me to setup! I try my best to push using PowerShell and it is starting to gain adoption, which is great. That being said, how exactly would one go about running a PowerShell script (.ps1) from a scheduled task?
