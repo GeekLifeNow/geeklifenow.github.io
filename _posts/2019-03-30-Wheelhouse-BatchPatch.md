@@ -13,49 +13,50 @@ Most of the servers in my environment I have set to update on their own and rebo
 
 1. After the change has been approved, I import my list of servers from a static _servers.txt_ file. This adds my list of servers in the the host grid inside BatchPatch. *At this point I have already _"Approved for install"_ all the needed updates on the WSUS server.
 
-<p align="center">
-  <img src="/img/posts/wh-batchpatch_0.jpg">
-</p>
+    <p align="center">
+      <img src="/img/posts/wh-batchpatch_0.jpg">
+    </p>
 
 2. Select all the servers on the grid by pressing **CTRL-A**. Then select **Actions > Windows updates > Download and install updates** Once This will force the hosts to:
-   1. Check in with WSUS to see what updates are available.
-   2. Download the updates. _(A handy progress bar for each host will appear to give an indication of where the overall download process is.)_
-   3. Install the updates. _(Progress bar for the updates will appear for each host.)_
-   4. Report the final status of the installations and whether or not a reboot is required.
+       1. Check in with WSUS to see what updates are available.
+       2. Download the updates. _(A handy progress bar for each host will appear to give an indication of where the overall download process is.)_
+       3. Install the updates. _(Progress bar for the updates will appear for each host.)_
+       4. Report the final status of the installations and whether or not a reboot is required.
 
-<p align="center">
-  <img src="/img/posts/wh-batchpatch_1.jpg">
-</p>
+    <p align="center">
+      <img src="/img/posts/wh-batchpatch_1.jpg">
+    </p>
 
-<figure align="center">
-  <img src="/img/posts/wh-batchpatch_2.png" />
-  <figcaption>Image used from BatchPatch's site...</Figcaption>
-</figure>
+    <figure align="center">
+      <img src="/img/posts/wh-batchpatch_2.png" />
+      <figcaption>Image used from BatchPatch's site...</Figcaption>
+    </figure>
 
 3. At this point, I may have maybe a half-dozen of hosts that actually do not need rebooted. So I'll select them and then remove them from the grid. Those are done!
+
 4. The rest of the hosts that require a reboot I will schedule the reboot for a time of my choosing by selecting all the hosts in the grid with **CTRL-A** and then select **Actions > Task Scheduler > Create/modify scheduled task** _(I also need to make sure the task scheduler is enabled within BatchPatch. By default, it is set to off.)_
  
-<p align="center">
-  <img src="/img/posts/wh-batchpatch_3.jpg">
-</p>
+    <p align="center">
+      <img src="/img/posts/wh-batchpatch_3.jpg">
+    </p>
 
 5. I set the _Task:_ to **Reboot (shutdown.exe /r /f /t 0)**, set the _Reference:_ time to execute, set _Recurrence:_ to **None** and then click **OK**.
 
-<p align="center">
-  <img src="/img/posts/wh-batchpatch_4.jpg">
-</p>
+    <p align="center">
+      <img src="/img/posts/wh-batchpatch_4.jpg">
+    </p>
 
 6. The grid will then show you what and when the scheduled task will execute.
 
-<p align="center">
-  <img src="/img/posts/wh-batchpatch_5.jpg">
-</p>
+    <p align="center">
+      <img src="/img/posts/wh-batchpatch_5.jpg">
+    </p>
 
 7. You could essentially walk away and let this ride, but like most decent sysadmins, I like to know that everything has completed when I wake up from sleeping in. I then add another "host" to the grid. It's not an actual machine, but a place holder...I name it _EMAIL_. I then select just the _EMAIL_ host and then select **Actions > Task Scheduler > Create/modify scheduled task** for just that entry in the grid. I set the _Task:_ to **Send email notification**, set the _Reference:_ time to execute (In this case, I want to send the email a good amount of time after reboots to give them enough time to apply updates on either side of the reboots.), set _Recurrence:_ to **None** and then click **OK**. _*BatchPatch has some flexibility as to what gets sent in the 'Send email notification', so check the settings for email notifications within BatchPatch._
 
-<p align="center">
-  <img src="/img/posts/wh-batchpatch_6.jpg">
-</p>
+    <p align="center">
+      <img src="/img/posts/wh-batchpatch_6.jpg">
+    </p>
 
 8. Now the setup is completed! Sleep away and when I wake up, I check my email and find out the results. To this day, I have yet to have any issue with reboots not working. If there was a problem, this report would indicate that and I would investigate accordingly. I then can spend targeted time on any hosts that are not reporting as "online" Here is an example of a report. I have my email notifications to send an .html file of the entire grid:
 
@@ -66,7 +67,7 @@ Most of the servers in my environment I have set to update on their own and rebo
 
 At this point, I will do the necessary administrative tasks of completing this change in our change management system and email the local tech group so that they can begin validation on any applications.
 
-##In Summary...
+## In Summary...
 
 BatchPatch is a great tool! I started using it to just manage WSUS updates, but now I use it for lots of other automation tasks such as:
 
