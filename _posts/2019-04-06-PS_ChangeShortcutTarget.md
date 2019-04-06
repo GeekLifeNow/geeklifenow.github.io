@@ -15,7 +15,7 @@ _Search through a list of PCs and modify the target address on a specific web sh
   <img style="border:2px solid black" src="/img/posts/shortcut_target_0.png">
 </p>
 
-Seems simple enough, right? _grin._ Of course, the more I dug into the tasl, the more I wanted to add. Which has definitely helped with challenging myself in creating custom scripts for my environment. I have recently set out to dig in with PowerShell, and though I do watch some videos and read my go-to book, [Learn Windows PowerShell in a Month of Lunches](https://www.manning.com/books/learn-windows-powershell-in-a-month-of-lunches-second-edition){:target="_blank"}, there's honestly been no better learning than just starting with a simple, mundane task and work at automating it!
+Seems simple enough, right? _grin._ Of course, the more I dug into the task, the more I wanted to add. Which has definitely helped with challenging myself in creating custom scripts for my environment. I have recently set out to dig in with PowerShell, and though I do watch some videos and read my go-to book, [Learn Windows PowerShell in a Month of Lunches](https://www.manning.com/books/learn-windows-powershell-in-a-month-of-lunches-second-edition){:target="_blank"}, there's honestly been no better learning than just starting with a simple, mundane task and work at automating it!
 
 ## Mass-changing the target address for a .url/.lnk on a list of PCs:
 
