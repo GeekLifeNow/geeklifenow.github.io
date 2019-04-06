@@ -5,15 +5,15 @@ subtitle: A PowerShell script to change the target of a .url/.lnk file on multip
 share-img: /img/posts/shortcut_target_0.png
 tags: [PowerShell, automation, desktop management, shortcuts]
 ---
-<p align="center">
-  <img style="border:2px solid black" src="/img/posts/shortcut_target_0.png">
-</p>
-
 Recently, as a part of retiring legacy Windows Server OS(s), I had to find a quick and dirty way to change the target location for a certain file in the Public desktop folder on all the machines in my environment. Yes, I know...any shortcuts should be deployed via Group Policy...I get it. At the time, this was the most efficient way to deploy given the access and timelines when these were deployed. I am slowly but surely utilizing GPOs to manage shared printers, mapped drives, and desktop shortcuts and settings.
 
 So here was the task at hand:
 
 _Search through a list of PCs and modify the target address on a specific web shortcut that pointed to an intranet page that resides on the C:\Users\Public\Desktop._
+
+<p align="center">
+  <img style="border:2px solid black" src="/img/posts/shortcut_target_0.png">
+</p>
 
 Seems simple enough, right? _grin._ Of course, the more I dug into the tasl, the more I wanted to add. Which has definitely helped with challenging myself in creating custom scripts for my environment. I have recently set out to dig in with PowerShell, and though I do watch some videos and read my go-to book, [Learn Windows PowerShell in a Month of Lunches](https://www.manning.com/books/learn-windows-powershell-in-a-month-of-lunches-second-edition){:target="_blank"}, there's honestly been no better learning than just starting with a simple, mundane task and work at automating it!
 
