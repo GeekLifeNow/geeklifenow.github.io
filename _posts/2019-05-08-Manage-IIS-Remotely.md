@@ -53,7 +53,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName IIS-BasicAuthentication
 Enable-WindowsOptionalFeature -Online -FeatureName IIS-WindowsAuthentication
 ~~~
 
-As far as the few AppPools, really just one, bceause the DefaultAppPool will already be there...I cheated and just created the AppPool manually on the new. You can syncronize all your AppPools with the Web Deploy Tool if you had a lot to deal with. Check that out [here](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd569091v=ws.10){:target="_blank"}. When it comes to actually migrating your sites and files, you have two options: manually package them up and 'import' them or do a live sync in which the files get streamed to the new server. I chose to package the files up. This will create a nice .zip file that I copy over to the new server and import. To create the package:
+As far as the few AppPools, really just one, bceause the DefaultAppPool will already be there...I cheated and just created the AppPool manually on the new. You can syncronize all your AppPools with the Web Deploy Tool if you had a lot to deal with. Check that out [here](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd569091(v=ws.10)){:target="_blank"}. When it comes to actually migrating your sites and files, you have two options: manually package them up and 'import' them or do a live sync in which the files get streamed to the new server. I chose to package the files up. This will create a nice .zip file that I copy over to the new server and import. To create the package:
 
 ~~~
 msdeploy -verb:sync  -source:metakey=lm/w3svc/1 -dest:package=c:\geeklifenowsite.zip > WebDeployPackage.log
