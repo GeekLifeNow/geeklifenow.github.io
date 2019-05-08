@@ -19,7 +19,7 @@ I found that adding the proper management tools would not "stick" until after th
 
 Once it was back up, I installed the needed managemnt tools so that I (or anyone else on our team) could manage IIS from their Windows 10 workstation. To do that I had to start by changing one registry key:
 
-_HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WebManagement\Server key and change the EnableRemoteManagement_: Set value to **1**
+Find the _HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WebManagement\Server_ key and change the **EnableRemoteManagement** value to **1**
 
 The following commands will install WMSVC (Web Management Service) and set it to start automatically, as by dfeault, it is set to manual startup. I also had to start the service.
 
