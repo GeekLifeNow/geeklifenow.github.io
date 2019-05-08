@@ -75,7 +75,7 @@ This will extract all the files and folder structures from the old server's _C:\
 
 ## Installing IIS Components via PowerShell
 
-After the migration, I found that I had to install quite a bit of IIS components that the pages needed in order to function. Here is the comprehensive list of what I had to install, all as separate PowerShell commands. I had to somewhat follow this in the order listed, as some of the compnents toward the end of the list depend on stuff toward the top in order to be installed. Keep in mind that earlier I installed BasicAuthentication and WindowsAuthentication erlier before the migration as a part of staging dependencies. Microsoft will actually suggest not installing ASP Claassic, which unfortunately I had to for most of the pages to work. The last command on the list installs ASP Classic. You can get a listing of **all** the available features by running in PowerShell: 
+After the migration, I found that I had to install quite a bit of IIS components that the pages needed in order to function. Here is the comprehensive list of what I had to install, all as separate PowerShell commands. I had to somewhat follow this in the order listed, as some of the compnents toward the end of the list depend on stuff toward the top in order to be installed. Keep in mind that earlier I installed BasicAuthentication and WindowsAuthentication earlier before the migration as a part of staging dependencies. Microsoft will actually suggest not installing ASP Claassic, which unfortunately I had to for most of the pages to work. The last command on the list installs ASP Classic. You can get a listing of **all** the available features by running in PowerShell: 
 
 ~~~
 Get-WindowsOptionalFeature -Online | Where {$_.FeatureName -like 'IIS*'}_
