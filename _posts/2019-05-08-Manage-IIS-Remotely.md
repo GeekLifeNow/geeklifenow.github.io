@@ -2,7 +2,7 @@
 layout: post
 title: 'Migrate IIS and Manage it Remotely'
 subtitle: Manage multiple IIS servers from your Windows 10 PC.
-share-img: /img/posts/remote_IIS_0.png
+share-img: /img/posts/remote_IIS_0.jpg
 tags: [IIS, DISM, PowerShell, remote, RSAT, web servers, Windows 10]
 ---
 Not too long ago, I was tasked with migrating a legacy IIS 6.0 instance in order to retire a Windows Server 2003 VM. This old, crusty web server is riddled with mostly ASP Classic pages that the company never pulled the trigger on either retiring or rebuilding in a newer environment. So _yay me!_ for getting the opportunity to move it all and make sure it still works. We have since reduced our dependency on it, but it is still needed to process work from the older system.
