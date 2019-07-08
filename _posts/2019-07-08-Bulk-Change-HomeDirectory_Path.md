@@ -11,7 +11,7 @@ This will be a quick walk-through but will also make quick work should you need 
 
 Replace the DFS share locations with the literal UNC path for all the user home drives at my site.
 
-For example: Silence Dogood's current home drive points to _\\company.com\dfs-site\home directories\sdogood_ and it needs to be changed to _\\\fs01\siteusers\sdogood._
+For example: Silence Dogood's current home drive points to _\\\company.com\dfs-site\home directories\sdogood_ and it needs to be changed to _\\\fs01\siteusers\sdogood._
 
 ...for Silence and about 200 of his co-workers!
 
@@ -29,7 +29,7 @@ This gave me a humble .csv file that looked like this:
 
 _SamAccountName_ | _HomeDirectory_
 --------------- | --------------
-silence.dogood | \\\fs01\siteusers\sdogood
+silence.dogood | \\\company.com\dfs-site\home directories\sdogood
 
 I then opened Excel and performed a Find & Replace to swap out the paths in the HomeDirectory column. Save...duh!
 
