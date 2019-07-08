@@ -11,7 +11,7 @@ This will be a quick walk-through but will also make quick work should you need 
 
 Replace the DFS share locations with the literal UNC path for all the user home drives at my site.
 
-For example: Silence Dogood's current home drive points to _\\company.com\dfs-site\home directories\sdogood_ and it needs to be changed to _\\fs01\siteusers\sdogood._
+For example: Silence Dogood's current home drive points to _\\company.com\dfs-site\home directories\sdogood_ and it needs to be changed to _\\\fs01\siteusers\sdogood._
 
 ...for Silence and about 200 of his co-workers!
 
@@ -19,7 +19,7 @@ For example: Silence Dogood's current home drive points to _\\company.com\dfs-si
 
 Just like anything else in the world of sysadmins, there's plenty of different ways to do the same thing. Time was of the essence for me on this, so I had to move fast. The service desk tickets were rolling in for this issue at a growing rate, so I did it quick 'n' dirty!
 
-Because all of my site's users reside in on OU, I grabbed all the users in the OU, filtered for any user that has anything in the _HomeDrive_  location and grabbed some other identifying information and spit it out in a .csv file:
+Because all of my site's users reside in one OU, I grabbed all the users in the OU, filtered for any user that has anything in the _HomeDrive_  location and grabbed some other identifying information and spit it out in a .csv file:
 
 ~~~
 Get-ADUser -Filter 'HomeDrive -ne "$Null"' -SearchBase "OU=Users,OU=localsite,OU=Sites,DC=company,DC=com" -Property SamAccountName, HomeDirectory | Export-Csv -Path C:\Temp\HomeDrives.csv -encoding ascii -NoTypeInformation
@@ -27,8 +27,9 @@ Get-ADUser -Filter 'HomeDrive -ne "$Null"' -SearchBase "OU=Users,OU=localsite,OU
 
 This gave me a humble .csv file that looked like this:
 
-_SamAccountName	HomeDirectory_
-silence.dogood	\\fs01\siteusers\sdogood
+_SamAccountName_ | _HomeDirectory_
+--------------- | --------------
+silence.dogood | \\\fs01\siteusers\sdogood
 
 I then opened Excel and performed a Find & Replace to swap out the paths in the HomeDirectory column. Save...duh!
 
