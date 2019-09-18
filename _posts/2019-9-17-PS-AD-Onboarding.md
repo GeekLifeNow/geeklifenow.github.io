@@ -33,7 +33,7 @@ Anyway, this isn't a super-polished, silver platter, perfect presentation of a s
 
 ## What this script is and is not:
 
-This script is designed for one-off usage. It is not designed to ingest a .csv/.xlsx/.txt file of data and churn out accounts. Will it probably be the basis for that in my shop? You bet! If this structure works out well, then it will most liekly morph into the larger bulk account creation monstrosities that we can then put to good use.
+This script is designed for one-off usage. It is not designed to ingest a .csv/.xlsx/.txt file of data and churn out accounts. Will it probably be the basis for that in my shop? You bet! If this structure works out well, then it will most likely morph into the larger bulk account creation monstrosities that we can then put to good use.
 
 This script does not have polished logging. I do have quite a bit of try/catch blocks to at least spit out error mesage to the console that would be helpful to whoever is using it. One of the most important would be, "Hey dude, this account exists alerady!"
 
@@ -61,7 +61,7 @@ $Department = Read-host "Enter the department #"
 
 This is just built out by some simple _Read-Host_ cmdlets and a quick and dirty "menu" of sorts of the different departments to choose from.
 
-One of the new things that I learned in this process is the usage of the _switch_ statement. [Microsoft Docs] (https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_switch?view=powershell-6){:target="_blank"} puts it this way when it comes to using the switch statement:
+One of the new things that I learned in this process is the usage of the _switch_ statement. [Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_switch?view=powershell-6){:target="_blank"} puts it this way when it comes to using the switch statement:
 
 _"To check multiple conditions, use a Switch statement. The Switch statement is equivalent to a series of If statements, but it is simpler. The Switch statement lists each condition and an optional action. If a condition obtains, the action is performed."_
 
