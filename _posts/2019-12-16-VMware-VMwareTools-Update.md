@@ -97,7 +97,7 @@ To get a quick listing of running VMs that are showing they need updated:
 Get-VM | Get-VMguest | where-object {$_.State -eq 'Running' -and $_.ExtensionData.ToolsversionStatus -eq 'GuestToolsNeedUpgrade'} | Select VmName
 ~~~
 
-Now, if your cluster has mulitple Datacenters, like mine, you may want to just drill down to just your site. These previous commands will pull all the VMs from the entire cluster. To query just your datacenter site, prepend the commands with _Get-Datacenter -Name MydatacenterSite |_. So the command to find all the needed updates for your datacenter site would be:
+Now, if your cluster has mulitple Datacenters, like mine, you may want to just drill down to just your site. These previous commands will pull all the VMs from the entire cluster. To query just your datacenter site, prepend the commands with _Get-Datacenter -Name MydatacenterSite_. So the command to find all the needed updates for your datacenter site would be:
 
 ~~~
 Get-Datacenter -Name MyDatacenterSite | Get-VM | Get-VMguest | where-object {$_.State -eq 'Running' -and $_.ExtensionData.ToolsversionStatus -eq 'GuestToolsNeedUpgrade'} | Select VmName
