@@ -20,7 +20,7 @@ I won't pretend to be a PowerCLI guru by any means. In fact, I literally just in
 What I like right off the bat with PowerCLI is that it feels so much like PowerShell. In fact, it is a specific Powershell module that is designed to work with Microsoft PowerShell. It has over 400 cmdlets that can be used to automate and manage your VMware environment. 
 
 <p align="center">
-    <img src="/img/posts/vmware_tools_update_1.png" border="2">
+    <img style="border:2px solid black" src="/img/posts/vmware_tools_update_1.png" border="2">
 </p>
 
 ## The task at hand:
@@ -74,7 +74,7 @@ Connect-VIServer -Server "g1.geeklifenow.com"
 You then will be prompted to login with the credentials needed to interact with vSPhere:
 
 <p align="center">
-    <img src="/img/posts/vmware_tools_update_2.png" border="2">
+    <img style="border:2px solid black" src="/img/posts/vmware_tools_update_2.png" border="2">
 </p>
 
 There are plenty of other options to use when connecting to your cluster, like passing the username/password, using stored credentials, etc. Check out the ways to connect [here.](https://vdc-repo.vmware.com/vmwb-repository/dcr-public/e7c1a32c-a3c6-4d7c-91bb-18a86a38daf7/12353298-ce6e-4d3f-bd8d-ab9f5ab044cc/doc/Connect-VIServer.html){:target="_blank"} Remember, because this is all PowerShell, you can set variables for the connection information if you wish, for further scriped automation.
@@ -136,7 +136,7 @@ _"However, the virtual machine might still reboot after updating VMware Tools, d
 So now the VMware Tools will be updated one at a time on each VM in your .csv, at least from my observation. There is a progress bar, but for me it sits at 0% and the quickly jumps to 99% then blips to 0 again. At least for now, I wouldn't count on an accurate % for progress, but if you watch, you can see that it is working through the list.
 
 <p align="center">
-    <img src="/img/posts/vmware_tools_update_3.png" border="2">
+    <img style="border:2px solid black" src="/img/posts/vmware_tools_update_3.png" border="2">
 </p>
 
 ## Wrap-Up
