@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: 'Mass Update VMware Tools on Guest VMs'
 subtitle: 'Use PowerCLI to update VMware Tools on multiple VMs in your cluster.'
