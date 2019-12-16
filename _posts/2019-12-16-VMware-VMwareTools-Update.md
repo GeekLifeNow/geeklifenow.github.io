@@ -11,7 +11,7 @@ OK, I'm a tad OCD when I am browsing through my vSphere environment, and I see t
 
 _A newer version of VMware Tools is available for this virtual machine._
 
-I upgrade it...then I see another...upgrade...now I've forgotten what I came to do in the fist place!
+I upgrade it...then I see another...upgrade...now I've forgotten what I came to do in the first place!
 
 ## Enter PowerCLI
 
@@ -125,9 +125,9 @@ $VMs | % { Get-VM -Name $_.VmName | Update-Tools -NoReboot}
 
 This will start the update process on each VM. The -NoReboot parameter is using the the following switch parameters for the installer:
 
-_/s /v"/qn REBOOT=ReallySuppress"_
+_/s /v /qn REBOOT=ReallySuppress_
 
-This then allows you to reboot your VMs inside your regular maintenance windows. According to the VMware [documentation for this cmdlet](https://vdc-repo.vmware.com/vmwb-repository/dcr-public/e7c1a32c-a3c6-4d7c-91bb-18a86a38daf7/12353298-ce6e-4d3f-bd8d-ab9f5ab044cc/doc/index.html#linkb2c6f419e7481f8df0437dbcd81516fde6ac1b08;Update-Tools.html){:target="_blank"}, this may not keep the geust from rebooting:
+This then allows you to reboot your VMs inside your regular maintenance windows. According to the VMware [documentation for this cmdlet](https://vdc-repo.vmware.com/vmwb-repository/dcr-public/e7c1a32c-a3c6-4d7c-91bb-18a86a38daf7/12353298-ce6e-4d3f-bd8d-ab9f5ab044cc/doc/index.html#linkb2c6f419e7481f8df0437dbcd81516fde6ac1b08;Update-Tools.html){:target="_blank"}, this may not keep the guest from rebooting:
 
 _"However, the virtual machine might still reboot after updating VMware Tools, depending on the currently installed VMware Tools version, the VMware Tools version to which you want to upgrade, and the vCenter Center/ESX versions."_
 
@@ -141,7 +141,7 @@ So now the VMware Tools will be updated one at a time on each VM in your .csv, a
 
 ## Wrap-Up
 
-Keeping your environment update in all facets is quite a daunting task the larger your environment is. When you come across ways to speed it up or perform tasks in bulk, that is always worth the time to iron out, document, and streamline in order to save precious time and to give your clicking finger a break. This simple automation can be built out in even more complex ways to further automate updates. I could easily see this as a script that runs on a schedule to perform updates within a maintenance window. It would also be nice to see if there are any error catching options that can be used to document any errors that may come up. 
+Keeping your environment updated in all facets is quite a daunting task the larger your environment is. When you come across ways to speed it up or perform tasks in bulk, that is always worth the time to iron out, document, and streamline in order to save precious time and to give your clicking finger a break. This simple automation can be built out in even more complex ways to further automate updates. I could easily see this as a script that runs on a schedule to perform updates within a maintenance window. It would also be nice to see if there are any error catching options that can be used to document any errors that may come up. 
 
 I also like the fact that this utilizes the 'cluster-provided' VMware Tools installer. I started to use BatchPatch to schedule and install updates using the .exe installer and switches, but then you must start managing different versions of installers.
 
