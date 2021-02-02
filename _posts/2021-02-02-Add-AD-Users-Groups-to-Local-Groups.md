@@ -9,6 +9,7 @@ This is another quick post that might save some of my fellow SysAdmins and IT su
 
 ## Adding an AD group or user to a local group on one host interactively:
 
+
 ~~~
 $Domain = "geeklifenow.com"
 $ServerName = Read-Host "Server"
