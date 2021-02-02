@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Add AD Users/Groups to a PC/Server's Local Groups'
+title: 'How to add AD Users/Groups to Local Groups'
 subtitle: I time saver when it comes to adding access to AD users & groups to a PC or server's local groups.
 share-img: /img/posts/bulk_change_homedirectory_path_0.png
 tags: [PowerShell, AD, Active Directory, local groups, bulk changes, permissions]
