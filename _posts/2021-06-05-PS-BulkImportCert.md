@@ -56,7 +56,7 @@ $MyPwd = Get-Credential -UserName 'Enter password below' -Message 'Enter passwor
 ~~~
 
 <p align="center">
-    <img src="/img/posts/import_cert_1.png" border="2">
+    <img src="/img/posts/import_cert_1.png">
 </p>
 
 This will store the password without having to have the password in plain test inside your script. We will pass this local variable into the remote command by utilizing the _$Using:_ component. Because _Invoke-Command_ and its accompanying script block run in a different scope (on the remote machine), it knows nothing of any local variables that are defined outside of the script block. This allows you to pass any local variables into the remote session and use accordingly.
@@ -103,7 +103,7 @@ Set-WebConfiguration -Location "Default Web Site" -Filter 'system.webserver/secu
 ~~~
 
 <p align="center">
-    <img src="/img/posts/import_cert_2.png" border="4">
+    <img src="/img/posts/import_cert_2.png" border="25">
 </p>
 
 Notice that the _-Location_ parameter is the site you want to require SSL for in IIS. This will now force all secure connections to your new binding with its associated certificate.
