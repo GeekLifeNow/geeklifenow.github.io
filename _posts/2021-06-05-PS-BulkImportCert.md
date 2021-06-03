@@ -63,10 +63,10 @@ This will store the password without having to have the password in plain test i
 
 We will be importing the certificate to the _Personal (My)_ certificate store of the machine account. The following is:
 
-•	The starting of the process on the remote server
-•	The import action using the provided password
-•	Create an https binding on port 443
-•	Adding the imported certificate to the https binding
+* The starting of the process on the remote server
+* The import action using the provided password
+* Create an https binding on port 443
+* Adding the imported certificate to the https binding
 
 *This still falls within the _foreach_ loop defined above:
 ~~~
