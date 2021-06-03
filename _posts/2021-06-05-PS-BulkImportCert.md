@@ -103,7 +103,7 @@ Set-WebConfiguration -Location "Default Web Site" -Filter 'system.webserver/secu
 ~~~
 
 <p align="center">
-    <img src="/img/posts/import_cert_2.png" border="25">
+    <img src="/img/posts/import_cert_2.png" border: 2px solid #555">
 </p>
 
 Notice that the _-Location_ parameter is the site you want to require SSL for in IIS. This will now force all secure connections to your new binding with its associated certificate.
